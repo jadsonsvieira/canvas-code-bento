@@ -1,65 +1,65 @@
-// Interactive Script - Canvas & Code Showcase
+// Sales Magnet Engine - Canvas & Code
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // 1. Portfolio Cases Tabs Switcher
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const tabContents = document.querySelectorAll('.tab-content');
 
-    tabBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            tabBtns.forEach(b => b.classList.remove('active'));
-            tabContents.forEach(c => c.classList.remove('active'));
+    // 1. Lead Magnet Form Handler
+    const magnetForm = document.getElementById('magnet-form');
+    const magnetStatus = document.getElementById('magnet-status');
+    const submitBtn = document.getElementById('btn-submit-magnet');
 
-            btn.classList.add('active');
-            const targetTab = btn.getAttribute('data-tab');
-            document.getElementById(targetTab).classList.add('active');
-        });
-    });
-
-    // 2. Currency Switcher (BRL vs USD)
-    const currencyToggle = document.getElementById('currency-toggle');
-    const priceElements = document.querySelectorAll('.price-val');
-
-    if (currencyToggle) {
-        currencyToggle.addEventListener('change', () => {
-            const isUsd = currencyToggle.checked;
-            priceElements.forEach(priceEl => {
-                const brlVal = priceEl.getAttribute('data-brl');
-                const usdVal = priceEl.getAttribute('data-usd');
-
-                priceEl.style.opacity = '0';
-                setTimeout(() => {
-                    priceEl.textContent = isUsd ? usdVal : brlVal;
-                    priceEl.style.opacity = '1';
-                }, 150);
-            });
-        });
-    }
-
-    // 3. Lead Form Simulation
-    const leadForm = document.getElementById('lead-form');
-    const formMessage = document.getElementById('form-message');
-    const submitBtn = document.getElementById('btn-submit-lead');
-
-    if (leadForm) {
-        leadForm.addEventListener('submit', (e) => {
+    if (magnetForm) {
+        magnetForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            const name = document.getElementById('client-name').value;
-            const email = document.getElementById('client-email').value;
-            const service = document.getElementById('client-service').value;
+            const siteUrl = document.getElementById('site-url').value;
+            const siteEmail = document.getElementById('site-email').value;
 
-            submitBtn.textContent = 'Enviando Solicitação...';
+            submitBtn.textContent = 'Analisando site e gerando prévia...';
             submitBtn.style.opacity = '0.7';
 
             setTimeout(() => {
-                submitBtn.textContent = 'Solicitar Orçamento Expresso';
+                submitBtn.textContent = 'Gerar Diagnóstico & Prévia Grátis';
                 submitBtn.style.opacity = '1';
 
-                formMessage.style.display = 'block';
-                formMessage.innerHTML = `✨ <strong>Solicitação Recebida com Sucesso!</strong><br>Obrigado, ${name}. Nossa equipe do Canvas & Code entrará em contato via <em>${email}</em> em até 10 minutos para alinhar o <strong>${service}</strong>.`;
+                magnetStatus.style.display = 'block';
+                magnetStatus.innerHTML = `✨ <strong>Diagnóstico Solicitado!</strong><br>Analisando <em>${siteUrl}</em>. O relatório executivo + protótipo Bento Box será enviado para <em>${siteEmail}</em> em até 2 horas.`;
                 
-                leadForm.reset();
-            }, 1000);
+                magnetForm.reset();
+            }, 1200);
         });
+    }
+
+    // 2. Real-Time ROI Calculator
+    const visitorsInput = document.getElementById('visitors-input');
+    const ticketInput = document.getElementById('ticket-input');
+    const currentRevEl = document.getElementById('current-rev');
+    const projectedRevEl = document.getElementById('projected-rev');
+    const gainValEl = document.getElementById('gain-val');
+
+    function calculateROI() {
+        if (!visitorsInput || !ticketInput) return;
+
+        const visitors = parseFloat(visitorsInput.value) || 0;
+        const ticket = parseFloat(ticketInput.value) || 0;
+
+        // Current conversion: 1%
+        const currentSales = visitors * 0.01;
+        const currentRev = currentSales * ticket;
+
+        // Bento Box optimized conversion: 2.5%
+        const projectedSales = visitors * 0.025;
+        const projectedRev = projectedSales * ticket;
+
+        const gain = projectedRev - currentRev;
+
+        const formatBRL = (val) => val.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+        currentRevEl.textContent = formatBRL(currentRev);
+        projectedRevEl.textContent = formatBRL(projectedRev);
+        gainValEl.textContent = `${formatBRL(gain)} / mês`;
+    }
+
+    if (visitorsInput && ticketInput) {
+        visitorsInput.addEventListener('input', calculateROI);
+        ticketInput.addEventListener('input', calculateROI);
+        calculateROI(); // Initial run
     }
 });
