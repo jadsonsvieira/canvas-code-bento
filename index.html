@@ -3,202 +3,396 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canvas & Code | Estúdio de UX/UI Executivo & Desenvolvimento Agilizado</title>
-    <meta name="description" content="Landing Pages em Bento Box, Dark Mode de alta performance, Pitch Decks Executivos e Design Systems entregues em tempo recorde. MJSV Holding.">
+    <title>Canvas & Code | Estúdio de UX/UI Executivo & Frontend Bento Box</title>
+    <meta name="description" content="Design visual de altíssimo padrão, Landing Pages Bento Box, Dark Mode e Pitch Decks entregues em 48 horas. MJSV Holding.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Background Grid Effect -->
-    <div class="bg-glow"></div>
+    <!-- Dynamic Glow Effects -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
     <div class="bg-grid"></div>
 
     <!-- Header Navigation -->
     <header class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">
-                <span class="logo-accent">Canvas</span> & Code
-                <span class="badge-tag">MJSV Holding</span>
+                <div class="logo-icon">C&C</div>
+                <div class="logo-text">
+                    <span class="logo-title"><span class="logo-accent">Canvas</span> & Code</span>
+                    <span class="logo-subtitle">MJSV HOLDING</span>
+                </div>
             </a>
             <nav class="nav-menu">
                 <a href="#diferenciais">Diferenciais</a>
-                <a href="#servicos">Serviços</a>
+                <a href="#cases">Cases & Demostrativos</a>
                 <a href="#pacotes">Pacotes & Kits</a>
-                <a href="#contato" class="btn-primary-sm">Solicitar Orcamento</a>
+                <a href="#contato" class="btn-primary-sm">Solicitar Orçamento</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="container hero-content">
-            <div class="hero-badge">
-                <span class="pulse-dot"></span> Entregas em 48h a 72h • Padrão Silicon Valley
-            </div>
-            <h1 class="hero-title">
-                Codificar para <span class="gradient-text">Simplificar</span>.<br>
-                Design Executivo de Alta Conversão.
-            </h1>
-            <p class="hero-subtitle">
-                Desenvolvemos Landing Pages em Bento Box, Interfaces Dark Mode de alta performance e Pitch Decks irresistíveis para startups e líderes corporativos.
-            </p>
-            <div class="hero-actions">
-                <a href="#pacotes" class="btn-primary">Ver Pacotes & Preços</a>
-                <a href="#servicos" class="btn-secondary">Explorar Serviços</a>
-            </div>
-            
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">&lt; 0.5s</span>
-                    <span class="stat-label">Tempo de Carregamento</span>
+        <div class="container hero-wrapper">
+            <div class="hero-text-block">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span> ESTÚDIO DE UX/UI • ENTREGAS EM 48H
                 </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number">48h</span>
-                    <span class="stat-label">Prazo Protótipo Inicial</span>
+                <h1 class="hero-title">
+                    Codificar para <span class="gradient-text">Simplificar</span>.<br>
+                    Interfaces de Classe Mundial.
+                </h1>
+                <p class="hero-subtitle">
+                    Transformamos marcas e SaaS com a estética <strong>Bento Box Executiva</strong>, interfaces <strong>Dark Mode</strong> ultrarrápidas e <strong>Pitch Decks de alto impacto</strong> para captação de recursos.
+                </p>
+                <div class="hero-actions">
+                    <a href="#pacotes" class="btn-primary">
+                        <span>Explorar Pacotes & Preços</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                    <a href="#cases" class="btn-secondary">Ver Demostrativos</a>
                 </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Código Nativo & Limpo</span>
+
+                <div class="hero-metrics">
+                    <div class="metric">
+                        <span class="metric-val">&lt;0.4s</span>
+                        <span class="metric-lbl">Carregamento Nativo</span>
+                    </div>
+                    <div class="metric-sep"></div>
+                    <div class="metric">
+                        <span class="metric-val">100/100</span>
+                        <span class="metric-lbl">Google PageSpeed</span>
+                    </div>
+                    <div class="metric-sep"></div>
+                    <div class="metric">
+                        <span class="metric-val">48 Hours</span>
+                        <span class="metric-lbl">Turnaround Express</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Terminal / Code Mockup -->
+            <div class="hero-visual-block">
+                <div class="code-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-red"></span>
+                            <span class="btn-yellow"></span>
+                            <span class="btn-green"></span>
+                        </div>
+                        <span class="terminal-title">canvas_code_bento.config.js</span>
+                        <span class="terminal-badge">LIVE ENGINE</span>
+                    </div>
+                    <div class="terminal-body">
+                        <pre><code><span class="c-keyword">const</span> studio = <span class="c-keyword">new</span> <span class="c-class">CanvasAndCode</span>({
+  <span class="c-prop">philosophy</span>: <span class="c-string">"Codificar para Simplificar"</span>,
+  <span class="c-prop">designSystem</span>: <span class="c-string">"Executive Bento Box"</span>,
+  <span class="c-prop">stack</span>: [<span class="c-string">"HTML5"</span>, <span class="c-string">"CSS3"</span>, <span class="c-string">"JS Native"</span>, <span class="c-string">"Figma"</span>],
+  <span class="c-prop">deliveryTime</span>: <span class="c-string">"48 hours"</span>,
+  <span class="c-prop">performanceScore</span>: <span class="c-number">100</span>,
+  <span class="c-prop">conversionFocus</span>: <span class="c-boolean">true</span>
+});
+
+<span class="c-comment">// Instantiating high-converting layout</span>
+studio.<span class="c-func">renderBentoMasterpiece</span>();</code></pre>
+                    </div>
+                    <div class="terminal-footer">
+                        <div class="status-indicator">
+                            <span class="status-dot"></span> Ready for Production (BRL & USD)
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Bento Grid Features Section -->
+    <!-- Bento Grid Showcase -->
     <section id="diferenciais" class="section">
         <div class="container">
             <div class="section-header">
-                <span class="section-subtitle">ARQUITETURA DE DESIGN</span>
-                <h2 class="section-title">O Padrão Bento Box da Canvas & Code</h2>
+                <span class="section-subtitle">VISUAL ENGINE & DESIGN SYSTEM</span>
+                <h2 class="section-title">O Padrão Bento Box Executivo</h2>
+                <p class="section-desc">Design limpo, simetria cirúrgica e código leve sem dependências pesadas.</p>
             </div>
 
             <div class="bento-grid">
-                <!-- Bento Card 1: Main Feature -->
-                <div class="bento-card card-large card-glow-blue">
+                <!-- Bento 1: High Speed -->
+                <div class="bento-card card-large">
+                    <div class="card-glass-glow blue-glow"></div>
+                    <div class="card-badge">CÓDIGO PURO</div>
                     <div class="card-icon">⚡</div>
-                    <h3>Velocidade Extrema & Código Nativo</h3>
-                    <p>Sem WordPress pesado ou plugins vulneráveis. Desenvolvemos em HTML5/CSS3/JS puro para máxima velocidade de carregamento e nota 100 no Google PageSpeed.</p>
-                    <div class="code-preview">
-                        <code>&lt;div class="bento-box" style="performance: 100%"&gt;&lt;/div&gt;</code>
+                    <h3>Arquitetura Nativa & Tempo de Carregamento &lt; 0.4s</h3>
+                    <p>Desenvolvimento em HTML5, CSS3 e Javascript puro. Zero dependência de plugins do WordPress ou construtores pesados. Garantia de nota 100 no Google PageSpeed Insights.</p>
+                    
+                    <div class="pagespeed-widget">
+                        <div class="speed-circle">
+                            <svg viewBox="0 0 36 36" class="circular-chart green">
+                              <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                              <path class="circle" stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                              <text x="18" y="20.35" class="percentage">100</text>
+                            </svg>
+                        </div>
+                        <div class="speed-info">
+                            <strong>Google PageSpeed Score</strong>
+                            <span>Performance, Accessibility & SEO Grade A+</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Bento Card 2: Aesthetic -->
-                <div class="bento-card card-medium card-glow-green">
+                <!-- Bento 2: Dark Mode Aesthetic -->
+                <div class="bento-card card-medium">
+                    <div class="card-glass-glow cyan-glow"></div>
+                    <div class="card-badge">DESIGN SYSTEM</div>
                     <div class="card-icon">🎨</div>
-                    <h3>Dark Mode Executivo</h3>
-                    <p>Cores harmoniosas HSL (Azul Tecnológico, Cinza Grafite e Verde Destaque) alinhadas aos maiores SaaS do mundo.</p>
+                    <h3>Dark Mode Executivo & Vidro (Glassmorphism)</h3>
+                    <p>Cores HSL harmonizadas (Azul Tecnológico, Grafite Profundo e Neon Accent). Layouts limpos, minimalistas e altamente sofisticados.</p>
                 </div>
 
-                <!-- Bento Card 3: Conversion -->
-                <div class="bento-card card-medium card-glow-purple">
-                    <div class="card-icon">🎯</div>
-                    <h3>Arquitetura CRO de Altíssima Conversão</h3>
-                    <p>Layouts desenhados para retenção de atenção, clareza cognitiva e maximização de cliques no CTA.</p>
-                </div>
-
-                <!-- Bento Card 4: Pitch Decks -->
-                <div class="bento-card card-small">
+                <!-- Bento 3: Pitch Decks -->
+                <div class="bento-card card-medium">
+                    <div class="card-glass-glow purple-glow"></div>
+                    <div class="card-badge">INVESTOR READY</div>
                     <div class="card-icon">📊</div>
-                    <h3>Pitch Decks para VCs</h3>
-                    <p>Apresentações em PDF/Figma com design de impacto para captações Seed & Series A.</p>
+                    <h3>Investor Pitch Decks para Captação de VC</h3>
+                    <p>Transformamos dados densos em apresentações irresistíveis para fundos Angel, Seed e Series A (Figma / PDF / Canva).</p>
                 </div>
 
-                <!-- Bento Card 5: Responsiveness -->
+                <!-- Bento 4: CRO Engine -->
+                <div class="bento-card card-small">
+                    <div class="card-icon">🎯</div>
+                    <h3>Arquitetura CRO de Conversão</h3>
+                    <p>Hierarquia visual desenhada para retenção e máxima conversão de cliques.</p>
+                </div>
+
+                <!-- Bento 5: Responsiveness -->
                 <div class="bento-card card-small">
                     <div class="card-icon">📱</div>
                     <h3>Responsividade Milimétrica</h3>
-                    <p>Experiência perfeita em Smartphones, Tablets e Monitores 4K Ultrawide.</p>
+                    <p>Adaptação perfeita de Smartphones a Monitores Ultrawide de 4K.</p>
+                </div>
+
+                <!-- Bento 6: Global Multi-Currency -->
+                <div class="bento-card card-small">
+                    <div class="card-icon">🌐</div>
+                    <h3>Atendimento Global (USD & BRL)</h3>
+                    <p>Propostas e entregas prontas para clientes no Brasil e no exterior (EUA/Europa).</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing & Kits Section -->
-    <section id="pacotes" class="section bg-darker">
+    <!-- Interactive Cases Showcase -->
+    <section id="cases" class="section bg-darker">
         <div class="container">
             <div class="section-header">
-                <span class="section-subtitle">INVESTIMENTO DE ALTO RETORNO</span>
-                <h2 class="section-title">Kits & Pacotes Prontos (Caixa Rápido)</h2>
-                <p class="section-desc">Transparência total em valores para contratação imediata via Brasil (BRL) ou Internacional (USD).</p>
+                <span class="section-subtitle">PORTFOLIO EXECUTIVO</span>
+                <h2 class="section-title">Casos de Uso & Marcas MJSV</h2>
+                <p class="section-desc">Demonstrativos reais da estética e arquitetura desenvolvidas pela Canvas & Code.</p>
+            </div>
+
+            <!-- Tabbed Showcase Selector -->
+            <div class="cases-tabs">
+                <button class="tab-btn active" data-tab="tab-cash">Projeto Cash</button>
+                <button class="tab-btn" data-tab="tab-reaction">ReAction Engine</button>
+                <button class="tab-btn" data-tab="tab-iohub">I/O Hub 4.0</button>
+                <button class="tab-btn" data-tab="tab-bento">Bento UI Kit</button>
+            </div>
+
+            <div class="tab-content-container">
+                <div id="tab-cash" class="tab-content active">
+                    <div class="case-preview-card">
+                        <div class="case-info">
+                            <span class="case-category">FINTECH & DASHBOARD</span>
+                            <h3>Projeto Cash — Plataforma Financeira</h3>
+                            <p>Interface escura minimalista com visualização em Bento Box para análise de fluxo de caixa executivo e métricas em tempo real.</p>
+                            <ul class="case-highlights">
+                                <li>✓ Dashboard Responsivo em Dark Mode</li>
+                                <li>✓ Gráficos Vetoriais SVG Ultralleves</li>
+                                <li>✓ Retenção de Atenção Maximizada</li>
+                            </ul>
+                        </div>
+                        <div class="case-mockup">
+                            <div class="mockup-window">
+                                <div class="mockup-bar"><span></span><span></span><span></span></div>
+                                <div class="mockup-body">
+                                    <div class="mockup-grid">
+                                        <div class="mock-card">R$ 148.500<span>Receita Recorrente</span></div>
+                                        <div class="mock-card green">+34.2%<span>Crescimento MoM</span></div>
+                                        <div class="mock-card wide">Fluxo de Caixa Operacional em Tempo Real</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-reaction" class="tab-content">
+                    <div class="case-preview-card">
+                        <div class="case-info">
+                            <span class="case-category">AI & AUTOMATION</span>
+                            <h3>ReAction Engine — Automação de Agentes</h3>
+                            <p>Landing page e cockpit executivo para orquestração de workflows autônomos e agentes inteligentes de IA.</p>
+                        </div>
+                        <div class="case-mockup">
+                            <div class="mockup-window">
+                                <div class="mockup-bar"><span></span><span></span><span></span></div>
+                                <div class="mockup-body">
+                                    <div class="mockup-grid">
+                                        <div class="mock-card purple">99.9% Uptime<span>Agentes Ativos</span></div>
+                                        <div class="mock-card">0.12s Latência<span>Response Time</span></div>
+                                        <div class="mock-card wide">Orquestrador de Modelos ReAction</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-iohub" class="tab-content">
+                    <div class="case-preview-card">
+                        <div class="case-info">
+                            <span class="case-category">HUB DE INTEGRAÇÃO</span>
+                            <h3>I/O Hub 4.0 — Plataforma B2B</h3>
+                            <p>Hub central de dados com arquitetura de alta performance e visual em grid modular Bento Box.</p>
+                        </div>
+                        <div class="case-mockup">
+                            <div class="mockup-window">
+                                <div class="mockup-bar"><span></span><span></span><span></span></div>
+                                <div class="mockup-body">
+                                    <div class="mockup-grid">
+                                        <div class="mock-card cyan">API Gateway<span>4.0 Protocol</span></div>
+                                        <div class="mock-card">256-bit SSL<span>Segurança Máxima</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-bento" class="tab-content">
+                    <div class="case-preview-card">
+                        <div class="case-info">
+                            <span class="case-category">UI KIT & COMPONENTS</span>
+                            <h3>Canvas & Code Bento UI Kit</h3>
+                            <p>Biblioteca completa de componentes HTML/CSS limpos pronta para reuso em projetos de alta escala.</p>
+                        </div>
+                        <div class="case-mockup">
+                            <div class="mockup-window">
+                                <div class="mockup-bar"><span></span><span></span><span></span></div>
+                                <div class="mockup-body">
+                                    <div class="mockup-grid">
+                                        <div class="mock-card blue">UI Tokens<span>Design Tokens</span></div>
+                                        <div class="mock-card">CSS3 Pure<span>Zero Framework</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section with Currency Switcher -->
+    <section id="pacotes" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">TABELA OFICIAL DE INVESTIMENTO</span>
+                <h2 class="section-title">Kits de Atendimento Rápido (Caixa Rápido)</h2>
+                <p class="section-desc">Escolha o formato ideal para o seu projeto. Valores com transparência total em Reais ou Dólares.</p>
+                
+                <!-- Currency Switcher Toggle -->
+                <div class="currency-toggle-wrapper">
+                    <span class="toggle-lbl">Real Brasileiro (R$)</span>
+                    <label class="switch">
+                        <input type="checkbox" id="currency-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="toggle-lbl">Dólar Americano ($ USD)</span>
+                </div>
             </div>
 
             <div class="pricing-grid">
                 <!-- Kit 1 -->
                 <div class="pricing-card">
-                    <div class="pricing-badge">OPÇÃO EXPRESS</div>
+                    <div class="pricing-badge">ENTRADA EXPRESS</div>
                     <h3 class="pricing-title">Kit 1: Presença Express</h3>
                     <p class="pricing-subtitle">Identidade básica + Apresentação comercial de até 10 slides.</p>
                     <div class="pricing-price">
-                        <span class="currency">R$</span>650<span class="cents">,00</span>
-                        <span class="price-usd">ou $140 USD</span>
+                        <span class="price-val" data-brl="R$ 650,00" data-usd="$140 USD">R$ 650,00</span>
                     </div>
                     <ul class="pricing-features">
                         <li>✓ Logo & Guia Básico de Cores/Tipografia</li>
-                        <li>✓ Pitch Deck Comercial (10 slides PDF)</li>
+                        <li>✓ Pitch Deck Comercial (10 slides PDF/Canva)</li>
                         <li>✓ Entrega em 48 Horas</li>
-                        <li>✓ Suporte & Arquivos Fonte</li>
+                        <li>✓ Arquivos Fonte Inclusos</li>
                     </ul>
-                    <a href="#contato" class="btn-pricing">Contratar Kit 1</a>
+                    <a href="#contato" class="btn-pricing">Solicitar Kit 1</a>
                 </div>
 
                 <!-- Kit 2 (Featured) -->
                 <div class="pricing-card featured">
-                    <div class="pricing-badge badge-featured">MAIS POPULAR ★</div>
+                    <div class="pricing-badge badge-featured">RECOMENDADO ★</div>
                     <h3 class="pricing-title">Kit 2: Launchpad Startup</h3>
-                    <p class="pricing-subtitle">Pitch Deck Completo + Landing Page One-Pager Responsiva.</p>
+                    <p class="pricing-subtitle">Pitch Deck de Investimento + Landing Page Bento Box Completa.</p>
                     <div class="pricing-price">
-                        <span class="currency">R$</span>800<span class="cents">,00</span>
-                        <span class="price-usd">ou $180 USD</span>
+                        <span class="price-val" data-brl="R$ 800,00" data-usd="$180 USD">R$ 800,00</span>
                     </div>
                     <ul class="pricing-features">
-                        <li>✓ Pitch Deck de Investimento (12 slides)</li>
-                        <li>✓ Landing Page One-Pager (Bento Box)</li>
-                        <li>✓ Código HTML5/CSS3/JS Nativo</li>
-                        <li>✓ Entrega em 48h a 72h</li>
-                        <li>✓ Otimização de Velocidade & SEO</li>
+                        <li>✓ Pitch Deck de Captação (12 slides VC)</li>
+                        <li>✓ Landing Page One-Pager Responsiva</li>
+                        <li>✓ Código Nativo HTML5/CSS3/JS (Sub-0.4s)</li>
+                        <li>✓ Entrega Expressa em 48h a 72h</li>
+                        <li>✓ Otimização de SEO & Velocidade</li>
                     </ul>
-                    <a href="#contato" class="btn-primary btn-pricing-featured">Contratar Kit 2</a>
+                    <a href="#contato" class="btn-primary btn-pricing-featured">Solicitar Kit 2</a>
                 </div>
 
                 <!-- Kit 3 -->
                 <div class="pricing-card">
                     <div class="pricing-badge">COMPLETO</div>
                     <h3 class="pricing-title">Kit 3: Presença Digital Full</h3>
-                    <p class="pricing-subtitle">Branding completo + Protótipo 3 Telas + Landing Page.</p>
+                    <p class="pricing-subtitle">Rebranding completo + Protótipo UI/UX 3 Telas + Landing Page.</p>
                     <div class="pricing-price">
-                        <span class="currency">R$</span>950<span class="cents">,00</span>
-                        <span class="price-usd">ou $220 USD</span>
+                        <span class="price-val" data-brl="R$ 950,00" data-usd="$220 USD">R$ 950,00</span>
                     </div>
                     <ul class="pricing-features">
                         <li>✓ Rebranding & Guia Visual Completo</li>
                         <li>✓ Protótipo UI/UX (3 Telas no Figma)</li>
                         <li>✓ Landing Page de Alta Conversão em Código</li>
-                        <li>✓ Suporte Prioritário</li>
+                        <li>✓ Suporte Prioritário Direto</li>
                     </ul>
-                    <a href="#contato" class="btn-pricing">Contratar Kit 3</a>
+                    <a href="#contato" class="btn-pricing">Solicitar Kit 3</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact CTA Section -->
-    <section id="contato" class="section">
+    <!-- Lead Capture Section -->
+    <section id="contato" class="section bg-darker">
         <div class="container">
             <div class="cta-box">
-                <h2>Pronto para elevar o padrão visual do seu projeto?</h2>
-                <p>Receba seu orçamento em menos de 10 minutos ou inicie seu projeto hoje mesmo.</p>
-                <div class="cta-form">
-                    <input type="text" id="client-name" placeholder="Seu Nome ou Empresa">
-                    <input type="email" id="client-email" placeholder="Seu E-mail Executivo">
-                    <button id="btn-submit-lead" class="btn-primary">Solicitar Proposta Comercial</button>
-                </div>
+                <span class="cta-badge">INÍCIO IMEDIATO</span>
+                <h2>Pronto para elevar o padrão do seu projeto?</h2>
+                <p>Receba seu orçamento em menos de 10 minutos ou inicie seu atendimento expresso.</p>
+                <form id="lead-form" class="cta-form">
+                    <input type="text" id="client-name" placeholder="Seu Nome ou Empresa" required>
+                    <input type="email" id="client-email" placeholder="Seu E-mail Executivo" required>
+                    <select id="client-service" class="select-service">
+                        <option value="Kit 2 (Launchpad Startup)">Interesse: Kit 2 (Launchpad Startup)</option>
+                        <option value="Kit 1 (Presença Express)">Interesse: Kit 1 (Presença Express)</option>
+                        <option value="Kit 3 (Presença Digital Full)">Interesse: Kit 3 (Presença Digital Full)</option>
+                        <option value="Projeto Personalizado">Projeto Sob Medida</option>
+                    </select>
+                    <button type="submit" id="btn-submit-lead" class="btn-primary">Solicitar Orçamento Expresso</button>
+                </form>
                 <div id="form-message" class="form-message"></div>
             </div>
         </div>
@@ -207,8 +401,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-content">
-            <p>&copy; 2026 Canvas & Code Studio. Todos os direitos reservados. Uma vertical da <strong>MJSV Holding</strong>.</p>
-            <p class="footer-tagline">Arquiteto-Chefe: Jadson S. Vieira • Codificar para Simplificar.</p>
+            <div class="footer-logo">
+                <span class="logo-accent">Canvas</span> & Code
+            </div>
+            <p>&copy; 2026 Canvas & Code Studio. Todos os direitos reservados. Vertical da <strong>MJSV Holding</strong>.</p>
+            <p class="footer-tagline">CEO & Arquiteto-Chefe: Jadson S. Vieira • "Codificar para Simplificar"</p>
         </div>
     </footer>
 

@@ -1,45 +1,65 @@
-// JavaScript Canvas & Code Studio Interaction
+// Interactive Script - Canvas & Code Showcase
 document.addEventListener('DOMContentLoaded', () => {
-    const submitBtn = document.getElementById('btn-submit-lead');
-    const nameInput = document.getElementById('client-name');
-    const emailInput = document.getElementById('client-email');
-    const formMessage = document.getElementById('form-message');
+    
+    // 1. Portfolio Cases Tabs Switcher
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
 
-    if (submitBtn) {
-        submitBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const name = nameInput.value.trim();
-            const email = emailInput.value.trim();
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            tabBtns.forEach(b => b.classList.remove('active'));
+            tabContents.forEach(c => c.classList.remove('active'));
 
-            if (!name || !email) {
-                alert('Por favor, preencha seu nome e e-mail para receber a proposta.');
-                return;
-            }
+            btn.classList.add('active');
+            const targetTab = btn.getAttribute('data-tab');
+            document.getElementById(targetTab).classList.add('active');
+        });
+    });
 
-            // Simulate form submission
-            submitBtn.textContent = 'Enviando...';
-            submitBtn.style.opacity = '0.7';
+    // 2. Currency Switcher (BRL vs USD)
+    const currencyToggle = document.getElementById('currency-toggle');
+    const priceElements = document.querySelectorAll('.price-val');
 
-            setTimeout(() => {
-                submitBtn.textContent = 'Solicitar Proposta Comercial';
-                submitBtn.style.opacity = '1';
-                nameInput.value = '';
-                emailInput.value = '';
+    if (currencyToggle) {
+        currencyToggle.addEventListener('change', () => {
+            const isUsd = currencyToggle.checked;
+            priceElements.forEach(priceEl => {
+                const brlVal = priceEl.getAttribute('data-brl');
+                const usdVal = priceEl.getAttribute('data-usd');
 
-                formMessage.style.display = 'block';
-                formMessage.textContent = `Obrigado, ${name}! Sua solicitação foi recebida. Entraremos em contato em até 10 minutos no e-mail ${email}.`;
-            }, 1000);
+                priceEl.style.opacity = '0';
+                setTimeout(() => {
+                    priceEl.textContent = isUsd ? usdVal : brlVal;
+                    priceEl.style.opacity = '1';
+                }, 150);
+            });
         });
     }
 
-    // Interactive card tilt effect
-    const bentoCards = document.querySelectorAll('.bento-card');
-    bentoCards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            card.style.borderColor = 'rgba(0, 240, 255, 0.4)';
+    // 3. Lead Form Simulation
+    const leadForm = document.getElementById('lead-form');
+    const formMessage = document.getElementById('form-message');
+    const submitBtn = document.getElementById('btn-submit-lead');
+
+    if (leadForm) {
+        leadForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('client-name').value;
+            const email = document.getElementById('client-email').value;
+            const service = document.getElementById('client-service').value;
+
+            submitBtn.textContent = 'Enviando Solicitação...';
+            submitBtn.style.opacity = '0.7';
+
+            setTimeout(() => {
+                submitBtn.textContent = 'Solicitar Orçamento Expresso';
+                submitBtn.style.opacity = '1';
+
+                formMessage.style.display = 'block';
+                formMessage.innerHTML = `✨ <strong>Solicitação Recebida com Sucesso!</strong><br>Obrigado, ${name}. Nossa equipe do Canvas & Code entrará em contato via <em>${email}</em> em até 10 minutos para alinhar o <strong>${service}</strong>.`;
+                
+                leadForm.reset();
+            }, 1000);
         });
-        card.addEventListener('mouseleave', () => {
-            card.style.borderColor = 'rgba(255, 255, 255, 0.08)';
-        });
-    });
+    }
 });
