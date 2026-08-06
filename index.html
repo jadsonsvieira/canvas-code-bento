@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagnóstico de UI/UX & Protótipos Bento Box | Canvas & Code</title>
-    <meta name="description" content="Validador de conversão de Landing Pages e solicitação de protótipos em 48h. Powered by Canvas & Code (canvasecode.com.br).">
+    <title>Showroom de Trabalhos & Ativos Visuais | Canvas & Code</title>
+    <meta name="description" content="Galeria viva de entregáveis, protótipos de UI/UX, Bento Boxes e Pitch Decks desenvolvidos pela Canvas & Code (canvasecode.com.br).">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,139 +25,192 @@
                 <div class="logo-icon">C&C</div>
                 <div class="logo-text">
                     <span class="logo-title"><span class="logo-accent">Canvas</span> & Code</span>
-                    <span class="logo-subtitle">VISITAR SITE OFICIAL ↗</span>
+                    <span class="logo-subtitle">SHOWROOM DE TRABALHOS</span>
                 </div>
             </a>
             <nav class="nav-menu">
-                <a href="#diagnostico">Diagnóstico Grátis</a>
-                <a href="#demo">Demo Bento Box</a>
-                <a href="#calculadora">Calculadora de ROI</a>
-                <a href="https://canvasecode.com.br/" target="_blank" class="btn-primary-sm">Acessar canvasecode.com.br ↗</a>
+                <a href="#projetos">Projetos & Interfaces</a>
+                <a href="#pitchdecks">Pitch Decks</a>
+                <a href="#componentes">Componentes Bento</a>
+                <a href="https://canvasecode.com.br/" target="_blank" class="btn-primary-sm">Visitar canvasecode.com.br ↗</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section: Lead Magnet / Captura de Tráfego -->
-    <section class="hero-section">
-        <div class="container hero-wrapper">
-            <div class="hero-text-block">
-                <div class="hero-badge">
-                    <span class="pulse-dot"></span> FERRAMENTA DE ATRAÇÃO & DIAGNÓSTICO DE UI/UX
-                </div>
-                <h1 class="hero-title">
-                    Seu site está <span class="gradient-text">perdendo clientes</span> por conta do design?
-                </h1>
-                <p class="hero-subtitle">
-                    Descubra como transformar a sua Landing Page em uma <strong>máquina de conversão estilo Bento Box</strong> com carregamento nativo e estética executiva.
-                </p>
-
-                <!-- Isca de Captura / Diagnóstico Gratuito -->
-                <div id="diagnostico" class="magnet-card">
-                    <h3>🔍 Solicite um Diagnóstico de UI/UX Gratuito</h3>
-                    <p>Cole o link do seu site atual e receba uma análise visual + prévia de redesign em até 2 horas.</p>
-                    
-                    <form id="magnet-form" class="magnet-form">
-                        <div class="input-group">
-                            <input type="text" id="site-url" placeholder="https://seusite.com.br" required>
-                            <input type="email" id="site-email" placeholder="Seu E-mail ou WhatsApp" required>
-                        </div>
-                        <button type="submit" id="btn-submit-magnet" class="btn-primary btn-full">
-                            <span>Gerar Diagnóstico & Prévia Grátis</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                        </button>
-                    </form>
-                    <div id="magnet-status" class="magnet-status"></div>
-                </div>
-            </div>
-
-            <!-- Demo Bento Box Component -->
-            <div id="demo" class="hero-visual-block">
-                <div class="bento-preview-box">
-                    <div class="preview-header">
-                        <span class="preview-tag">ESTÉTIKA BENTO BOX 48H</span>
-                        <span class="preview-status">DEMO AO VIVO</span>
-                    </div>
-
-                    <!-- Live Components Showcase -->
-                    <div class="preview-grid">
-                        <div class="preview-card speed-card">
-                            <div class="badge-accent">PERFORMANCE</div>
-                            <div class="big-stat">0.38s</div>
-                            <p>Carregamento Instantâneo Nativo (HTML5/CSS3)</p>
-                        </div>
-                        <div class="preview-card cro-card">
-                            <div class="badge-accent green">CONVERSÃO</div>
-                            <div class="big-stat">+140%</div>
-                            <p>Aumento Médio em Retenção & Cliques</p>
-                        </div>
-                        <div class="preview-card main-card">
-                            <div class="badge-accent purple">REDESIGN EXPRESSO</div>
-                            <h4>Entregamos seu site pronto em 48 Horas</h4>
-                            <p>Design em Bento Box Dark Mode, código limpo e responsividade absoluta.</p>
-                        </div>
-                    </div>
-
-                    <div class="preview-footer">
-                        <span>Quer ver este padrão no seu projeto?</span>
-                        <a href="https://canvasecode.com.br/" target="_blank" class="link-official">Ver ecossistema em canvasecode.com.br ↗</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Calculadora de ROI / Estimador de Valor -->
-    <section id="calculadora" class="section bg-darker">
+    <!-- Header Hero: Vitrine de Trabalhos -->
+    <section class="hero-showroom">
         <div class="container text-center">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span> GALERIA DE ENTREGÁVEIS & ENGENHARIA VISUAL
+            </div>
+            <h1 class="hero-title">
+                Trabalhos Executados & <span class="gradient-text">Ativos de Design</span>
+            </h1>
+            <p class="hero-subtitle">
+                Uma amostra viva dos nossos protótipos de UI/UX, interfaces em Bento Box Dark Mode e Pitch Decks executivos desenvolvidos pela Canvas & Code.
+            </p>
+        </div>
+    </section>
+
+    <!-- Galeria de Projetos & Interfaces -->
+    <section id="projetos" class="section">
+        <div class="container">
             <div class="section-header">
-                <span class="section-subtitle">SIMULADOR DE IMPACTO</span>
-                <h2 class="section-title">Quanto um Redesign Executivo pode Gerar?</h2>
-                <p class="section-desc">Simule o retorno financeiro ao transformar uma página comum em uma Landing Page Bento Box de Alta Conversão.</p>
+                <span class="section-subtitle">PROTÓTIPOS & DASHBOARDS</span>
+                <h2 class="section-title">Interfaces & Projetos MJSV</h2>
             </div>
 
-            <div class="calculator-box">
-                <div class="calc-inputs">
-                    <div class="calc-field">
-                        <label for="visitors-input">Visitantes Mensais no Seu Site:</label>
-                        <input type="number" id="visitors-input" value="3000" step="500">
+            <div class="showroom-grid">
+                <!-- Case 1: Projeto Cash -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag">FINTECH / DASHBOARD</span>
+                        <span class="project-speed">&lt;0.4s load</span>
                     </div>
-                    <div class="calc-field">
-                        <label for="ticket-input">Ticket Médio do Seu Produto (R$):</label>
-                        <input type="number" id="ticket-input" value="500" step="50">
+                    <h3>Projeto Cash — Cockpit Financeiro</h3>
+                    <p>Dashboard executivo em Dark Mode com cartões simétricos Bento Box para análise de caixa e métricas em tempo real.</p>
+                    <div class="project-mockup">
+                        <div class="mockup-window">
+                            <div class="mockup-bar"><span></span><span></span><span></span></div>
+                            <div class="mockup-body">
+                                <div class="mock-grid">
+                                    <div class="mock-tile green">R$ 148.500<span>Receita Recorrente MoM</span></div>
+                                    <div class="mock-tile blue">99.8%<span>Precisão de Conciliação</span></div>
+                                    <div class="mock-tile full cyan">Fluxo de Caixa Operacional em Bento Box</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="calc-results">
-                    <div class="result-card">
-                        <span class="result-title">Conversão Atual (Estimada 1%)</span>
-                        <span id="current-rev" class="result-val">R$ 15.000,00</span>
+                <!-- Case 2: ReAction Engine -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag">AI & AUTOMATION</span>
+                        <span class="project-speed">HTML5 Nativo</span>
                     </div>
-                    <div class="result-card highlighted">
-                        <span class="result-title">Conversão Bento Box (Estimada 2.5%)</span>
-                        <span id="projected-rev" class="result-val green">R$ 37.500,00</span>
+                    <h3>ReAction Engine — Orquestrador de IA</h3>
+                    <p>Interface futurista em vidros (glassmorphism) para monitoramento de workflows autônomos e agentes inteligentes.</p>
+                    <div class="project-mockup">
+                        <div class="mockup-window">
+                            <div class="mockup-bar"><span></span><span></span><span></span></div>
+                            <div class="mockup-body">
+                                <div class="mock-grid">
+                                    <div class="mock-tile purple">0.12s<span>Response Latency</span></div>
+                                    <div class="mock-tile green">Active Agents<span>Engine Status</span></div>
+                                    <div class="mock-tile full purple">Workflow Autonomous Monitor</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="calc-gain">
-                    🚀 Ganho Estimado Adicional: <strong id="gain-val">R$ 22.500,00 / mês</strong>
                 </div>
 
-                <div class="calc-action">
-                    <a href="https://canvasecode.com.br/" target="_blank" class="btn-primary">
-                        Transformar Meu Site na Canvas & Code (canvasecode.com.br)
-                    </a>
+                <!-- Case 3: I/O Hub 4.0 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-tag">HUB B2B</span>
+                        <span class="project-speed">Pure CSS3</span>
+                    </div>
+                    <h3>I/O Hub 4.0 — Gateway de Dados</h3>
+                    <p>Arquitetura modular de dados com alta densidade de informação em grid limpo e responsivo.</p>
+                    <div class="project-mockup">
+                        <div class="mockup-window">
+                            <div class="mockup-bar"><span></span><span></span><span></span></div>
+                            <div class="mockup-body">
+                                <div class="mock-grid">
+                                    <div class="mock-tile cyan">API Gateway 4.0<span>Protocol Active</span></div>
+                                    <div class="mock-tile blue">256-bit SSL<span>Segurança Máxima</span></div>
+                                    <div class="mock-tile full blue">B2B Integration Layer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer com Direcionamento Oficial -->
+    <!-- Galeria de Pitch Decks -->
+    <section id="pitchdecks" class="section bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">INVESTOR PRESENTATIONS</span>
+                <h2 class="section-title">Estruturas de Pitch Decks (PDF / Figma)</h2>
+                <p class="section-desc">Modelos visuais desenvolvidos para apresentações a Fundos de Investimento (Seed & VC).</p>
+            </div>
+
+            <div class="decks-grid">
+                <div class="deck-card">
+                    <div class="deck-slide-header">SLIDE 01: PROBLEM & SOLUTION</div>
+                    <h4>Startup Seed Pitch Framework</h4>
+                    <p>Tipografia corporativa, gráficos vetoriais de mercado (TAM/SAM/SOM) e hierarquia visual impactante.</p>
+                    <div class="slide-preview">
+                        <div class="slide-box">
+                            <span class="slide-title">Market Opportunity</span>
+                            <div class="slide-bars">
+                                <div class="bar bar-1">TAM: $4.2B</div>
+                                <div class="bar bar-2">SAM: $850M</div>
+                                <div class="bar bar-3">SOM: $120M</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="deck-card">
+                    <div class="deck-slide-header">SLIDE 02: UNIT ECONOMICS</div>
+                    <h4>Financial Metrics & Growth Roadmap</h4>
+                    <p>Visualização clara de LTV, CAC, Payback e projeção de receita recorrente para reuniões com investidores.</p>
+                    <div class="slide-preview">
+                        <div class="slide-box">
+                            <span class="slide-title">Unit Economics & LTV/CAC</span>
+                            <div class="slide-metrics">
+                                <div class="m-card">LTV: R$ 4.800</div>
+                                <div class="m-card">CAC: R$ 620</div>
+                                <div class="m-card green">Ratio: 7.7x</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Componentes Bento Box -->
+    <section id="componentes" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">DESIGN SYSTEM TOKENS</span>
+                <h2 class="section-title">Componentes Bento Box em Código Nativo</h2>
+            </div>
+
+            <div class="components-grid">
+                <div class="comp-card">
+                    <span class="comp-tag">CARD COMPONENT</span>
+                    <h5>Bento Glass Card</h5>
+                    <p>Fundo com filtro de vidro e borda em ciano neon.</p>
+                </div>
+                <div class="comp-card">
+                    <span class="comp-tag">STAT COMPONENT</span>
+                    <h5>Metric Counter</h5>
+                    <p>Exibição de KPIs e estatísticas em destaque.</p>
+                </div>
+                <div class="comp-card">
+                    <span class="comp-tag">BUTTON COMPONENT</span>
+                    <h5>Gradient Action Button</h5>
+                    <p>Botão interativo com gradiente dinâmico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-brand">
                 <span class="logo-accent">Canvas</span> & Code Studio
             </div>
-            <p>Esta é uma página de captura e demonstração interativa de alta velocidade.</p>
-            <p>Conheça a nossa estrutura institucional completa em: <a href="https://canvasecode.com.br/" target="_blank" class="footer-link">canvasecode.com.br</a></p>
+            <p>Galeria viva de amostras e trabalhos desenvolvidos pela Canvas & Code.</p>
+            <p>Acesse nosso site oficial: <a href="https://canvasecode.com.br/" target="_blank" class="footer-link">canvasecode.com.br ↗</a></p>
             <p class="footer-tagline">MJSV Holding • CEO: Jadson S. Vieira</p>
         </div>
     </footer>
